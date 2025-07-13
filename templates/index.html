@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Cognizant AI</h1>
+            <button id="newChatBtn" class="btn">New Chat</button>
+        </header>
+        
+        <div class="chat-container">
+            <div class="sidebar">
+                <h3>Chat History</h3>
+            <div id="chatHistory" class="chat-history">
+                <!-- Chat history will be loaded here -->
+                </div>
+            </div>
+        
+            <div class="main-chat">
+                <div id="chatMessages" class="chat-messages">
+                    <div class="welcome-message">
+                        <h2>Welcome to Cognizant AI! 👋</h2>
+                        <p>Start a conversation by typing a message below.</p>
+                    </div>
+                </div>
+                
+                <div class="chat-input-container">
+                    <textarea id="messageInput" placeholder="Type your message here..." rows="3"></textarea>
+                    <button id="sendBtn" class="btn send-btn">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,1 +1,0 @@
-# COGNIZANT-AI
